@@ -6,10 +6,10 @@ public class Parking {
 
     static String nombreUsuario;
     static int opcion = 0;
-    static double tarifaHora = 1.50;
+    static float tarifaHora = 1.50f;
     static int totalVehiculos = 0;
-    static float totalHorasRegistradas = 0;
-    static float totalCalculosTarifa = 0;
+    static int totalHorasRegistradas = 0;
+    static int totalCalculosTarifa = 0;
     static float importeTotalCalculado = 0;
     static int cantidad = 0;
 
@@ -24,34 +24,32 @@ public class Parking {
 
             System.out.println("Elija una opcion: ");
             opcion = scanner.nextInt();
-
+            while (opcion <= 0 || opcion > 4) {
+                mostrarMenu();
+                System.out.println("Opcion no válida");
+                System.out.println("Elija una opcion: ");
+                opcion = scanner.nextInt();
+            }
+            ;
             switch (opcion) {
                 case 1:
-
-                    System.out.println();
-                    System.out.println("¿Cuántos vehículos quieres registrar?");
-                    cantidad = scanner.nextInt();
-                    while (!(cantidad > 0)) {
-                        System.out.println("Debe ser un entero positivo");
-                        System.out.println();
-                        System.out.println("¿Cuántos vehículos quieres registrar?");
-                        cantidad = scanner.nextInt();
-                    }
-                    registrarVehiculos(scanner, cantidad);
+                    registrarVehiculos(scanner);
 
                     break;
                 case 2:
 
-                calcularTarifaEstacionemiento(scanner);
+                    calcularTarifa(scanner);
                     break;
                 case 3:
-
+                    mostrarResumen();
                     break;
 
                 default:
                     break;
             }
         } while (opcion != 4);
+        System.out.println("Gracias por utilizar PARKING DAM-PRO");
+        scanner.close();
 
     }
 
@@ -79,7 +77,17 @@ public class Parking {
      * @param scanner
      * @param cantidad
      */
-    public static void registrarVehiculos(Scanner scanner, int cantidad) {
+    public static void registrarVehiculos(Scanner scanner) {
+
+        System.out.println();
+        System.out.println("¿Cuántos vehículos quieres registrar?");
+        cantidad = scanner.nextInt();
+        while (!(cantidad > 0)) {
+            System.out.println("Debe ser un entero positivo");
+            System.out.println();
+            System.out.println("¿Cuántos vehículos quieres registrar?");
+            cantidad = scanner.nextInt();
+        }
 
         for (int i = 1; i <= cantidad; i++) {
             System.out.println("Vehículo: " + i);
@@ -104,10 +112,11 @@ public class Parking {
         System.out.println("Vehículos registrados en esta operación: " + cantidad);
     }
 
-    public static void  calcularTarifaEstacionemiento(Scanner scanner, int horas) {
+    public static void calcularTarifa(Scanner scanner) {
 
+        System.out.println();
         System.out.println("Horas para calcular la tarifa: ");
-        horas = scanner.nextInt();
+        int horas = scanner.nextInt();
 
         while (!(horas > 0)) {
             System.out.println("Las horas deben ser mayores que 0");
@@ -115,11 +124,28 @@ public class Parking {
             System.out.println("Horas para calcular la tarifa: ");
             horas = scanner.nextInt();
         }
-        double importe = horas * tarifaHora;
+        float importe = horas * tarifaHora;
         totalCalculosTarifa++;
         importeTotalCalculado += importe;
 
-        System.out.println("Importe: "+importe+" EUR");
-        return ;
+        System.out.println("Importe: " + importe + " EUR");
+        return;
     }
+
+    public static void mostrarResumen() {
+
+        System.out.println();
+        System.out.println("================================");
+        System.out.println("         RESUMEN DEL DIA        ");
+        System.out.println("================================");
+
+        System.out.println();
+        System.out.println("Usuario: " + nombreUsuario);
+        System.out.println("Vehículos registrados: " + totalVehiculos);
+        System.out.println("Horas registradas: " + totalHorasRegistradas);
+        System.out.println("Cálculos de tarifa: " + totalCalculosTarifa);
+        System.out.println("Importe total calculado: " + importeTotalCalculado);
+        return;
+    }
+
 }
