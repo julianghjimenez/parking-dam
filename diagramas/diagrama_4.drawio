@@ -1,0 +1,68 @@
+<mxfile host="65bd71144e">
+    <diagram id="GnPjZWuDLBs7CMKPFuCR" name="Página-1">
+        <mxGraphModel dx="354" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-1" parent="1" style="html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Inicio" vertex="1">
+                    <mxGeometry height="40" width="100" x="440" y="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-6" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-3" style="edgeStyle=none;html=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Pedir &quot;Horas para calcular la tarifa:&quot;, leer horas" vertex="1">
+                    <mxGeometry height="80" width="340" x="330" y="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-4" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-1" style="edgeStyle=none;html=1;entryX=0.477;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-8" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-5" style="edgeStyle=none;html=1;entryX=1.006;entryY=0.451;entryDx=0;entryDy=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-12" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-5" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-5" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="¿horas &amp;gt; 0?" vertex="1">
+                    <mxGeometry height="150" width="160" x="420" y="435" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-9" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-7" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-3">
+                    <mxGeometry relative="1" x="-0.0156" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="165" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Mostrar &quot;Las horas deben ser mayores que 0&quot;" vertex="1">
+                    <mxGeometry height="135" width="190" x="70" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-13" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-10" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="importe = horas * tarifaHora" vertex="1">
+                    <mxGeometry height="60" width="270" x="365" y="650" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-15" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-11" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="totalCalculosTarifa++" vertex="1">
+                    <mxGeometry height="60" width="270" x="365" y="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="importeTotalCalculado += importe" vertex="1">
+                    <mxGeometry height="60" width="270" x="365" y="980" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-16" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Mostrar &quot;importe&quot; + importe + &quot;EUR&quot;" vertex="1">
+                    <mxGeometry height="80" width="340" x="340" y="1130" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-17" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-14" style="edgeStyle=none;html=1;entryX=0.476;entryY=0.032;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-20" parent="1" style="html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Fin" vertex="1">
+                    <mxGeometry height="40" width="100" x="460" y="1360" as="geometry"/>
+                </mxCell>
+                <mxCell id="eta4PubeFnNFh-ohZUpl-21" edge="1" parent="1" source="eta4PubeFnNFh-ohZUpl-16" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="eta4PubeFnNFh-ohZUpl-20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

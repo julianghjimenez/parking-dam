@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="saDlyvabmYOu0LW1RKg3" name="Página-1">
+        <mxGraphModel dx="313" dy="322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-9" edge="1" parent="1" source="QUwjL-UsnuLxai6_PX5w-1" style="edgeStyle=none;html=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="QUwjL-UsnuLxai6_PX5w-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-1" parent="1" style="html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Inicio" vertex="1">
+                    <mxGeometry height="40" width="100" x="160" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-4" parent="1" style="html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Fin" vertex="1">
+                    <mxGeometry height="40" width="100" x="160" y="930" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-10" edge="1" parent="1" source="QUwjL-UsnuLxai6_PX5w-5" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="QUwjL-UsnuLxai6_PX5w-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Crear Scanner (scanner)" vertex="1">
+                    <mxGeometry height="60" width="120" x="150" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-11" edge="1" parent="1" source="QUwjL-UsnuLxai6_PX5w-7" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="QUwjL-UsnuLxai6_PX5w-8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Iniciar variables:&amp;nbsp;&lt;div&gt;&amp;nbsp; static String nombreUsuario;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; static int opcion = 0;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; static float tarifaHora = 1.50f;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; static int totalVehiculos = 0;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; static int totalHorasRegistradas = 0;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; static int totalCalculosTarifa = 0;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; static float importeTotalCalculado = 0;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; static int cantidad = 0;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="270" width="290" x="65" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-8" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" value="Mostrar &quot;Nombre del usuario: &quot;y leer nombreUsuario" vertex="1">
+                    <mxGeometry height="80" width="340" x="40" y="750" as="geometry"/>
+                </mxCell>
+                <mxCell id="QUwjL-UsnuLxai6_PX5w-12" edge="1" parent="1" source="QUwjL-UsnuLxai6_PX5w-8" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#FFFFFF;fontColor=#000000;strokeColor=#000000;strokeWidth=2;fontSize=16" target="QUwjL-UsnuLxai6_PX5w-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
