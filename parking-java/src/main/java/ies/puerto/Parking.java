@@ -80,14 +80,7 @@ public class Parking {
     public static void registrarVehiculos(Scanner scanner) {
 
         System.out.println();
-        System.out.println("¿Cuántos vehículos quieres registrar?");
-        cantidad = scanner.nextInt();
-        while (!(cantidad > 0)) {
-            System.out.println("Debe ser un entero positivo");
-            System.out.println();
-            System.out.println("¿Cuántos vehículos quieres registrar?");
-            cantidad = scanner.nextInt();
-        }
+        cantidad = leerEnteroPositivo(scanner, "¿Cuántos vehículos quieres registrar? ");
 
         for (int i = 1; i <= cantidad; i++) {
             System.out.println("Vehículo: " + i);
@@ -95,14 +88,7 @@ public class Parking {
             String matricula = scanner.next();
             System.out.println("Matrícula registrada: " + matricula);
 
-            System.out.print("Horas estacionado: ");
-            int horas = scanner.nextInt();
-
-            while (!(horas > 0)) {
-                System.out.println("Las horas deben ser mayor a 0.");
-                System.out.print("Horas estacionado: ");
-                horas = scanner.nextInt();
-            }
+            int horas = leerEnteroPositivo(scanner, "Horas estacionado: ");
 
             totalVehiculos++;
             totalHorasRegistradas += horas;
@@ -115,21 +101,33 @@ public class Parking {
     public static void calcularTarifa(Scanner scanner) {
 
         System.out.println();
-        System.out.println("Horas para calcular la tarifa: ");
-        int horas = scanner.nextInt();
-
-        while (!(horas > 0)) {
-            System.out.println("Las horas deben ser mayores que 0");
-            System.out.println();
-            System.out.println("Horas para calcular la tarifa: ");
-            horas = scanner.nextInt();
-        }
+        int horas = leerEnteroPositivo(scanner, "Horas para calcular la tarifa: ");
         float importe = horas * tarifaHora;
         totalCalculosTarifa++;
         importeTotalCalculado += importe;
 
         System.out.println("Importe: " + importe + " EUR");
         return;
+    }
+
+    /**
+     * Solicita un entero positivo y repite la lectura mientras el valor no sea positivo.
+     *
+     * @param scanner objeto Scanner para leer desde teclado
+     * @param mensaje texto que se muestra antes de solicitar el valor
+     * @return entero positivo introducido por el usuario
+     */
+    public static int leerEnteroPositivo(Scanner scanner, String mensaje) {
+        System.out.print(mensaje);
+        int valor = scanner.nextInt();
+
+        while (valor <= 0) {
+            System.out.println("Debe ser un entero positivo.");
+            System.out.print(mensaje);
+            valor = scanner.nextInt();
+        }
+
+        return valor;
     }
 
     public static void mostrarResumen() {
