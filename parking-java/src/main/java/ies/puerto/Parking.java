@@ -54,7 +54,7 @@ public class Parking {
     }
 
     /**
-     * 
+     * Menu principal para la asistencia del usuario
      */
     public static void mostrarMenu() {
 
@@ -73,9 +73,8 @@ public class Parking {
     }
 
     /**
-     * 
-     * @param scanner
-     * @param cantidad
+     * Solicitud al ususario de datos del vehiculo a registrar
+     * @param scanner objeto Scanner para leer desde teclado
      */
     public static void registrarVehiculos(Scanner scanner) {
 
@@ -98,6 +97,10 @@ public class Parking {
         System.out.println("Vehículos registrados en esta operación: " + cantidad);
     }
 
+    /**
+     * Calculo de la tarifa 
+     * @param scanner objeto Scanner para leer desde teclado
+     */
     public static void calcularTarifa(Scanner scanner) {
 
         System.out.println();
@@ -130,6 +133,9 @@ public class Parking {
         return valor;
     }
 
+    /**
+     * Resumen mostrado al final del programa
+     */
     public static void mostrarResumen() {
 
         System.out.println();
