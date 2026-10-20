@@ -11,7 +11,7 @@
 
 ## Actividad 1 — Git, GitHub, Markdown y diagramas (10 puntos)
 
-En tu cuenta de GitHub crea un repositorio publico llamado **`parking-dam`** con README inicial. Clonalo en `~/git/parking-dam`, comprueba `git status` y `git remote -v` y aprende a preparar cambios (`git add`), confirmarlos (`git commit -m`) y publicarlos (`git push origin main`). Crea en diagrams.net los seis diagramas del algoritmo, guarda el editable `diagramas/parking.drawio` y exporta las seis imagenes `01_` a `06_`. Documenta tu trabajo en este mismo README utilizando titulos, subtitulos, listas, enlaces e imagenes.
+En tu cuenta de GitHub crea un repositorio publico llamado **`parking-dam`** con README inicial. Clonalo en `~/git/parking-dam`, comprueba `git status` y `git remote -v` y aprende a preparar cambios (`git add`), confirmarlos (`git commit -m`) y publicarlos (`git push origin main`). Crea en diagrams.net los seis diagramas del algoritmo, guarda el editable `diagramas` y exporta las seis imagenes `01_` a `06_`. Documenta tu trabajo en este mismo README utilizando titulos, subtitulos, listas, enlaces e imagenes.
 
 **Entrega y nota independientes:** en la Actividad 1 se evalua la demostracion individual de comandos, el diseño y la documentacion (10 puntos). La Actividad 2 conserva otra nota sobre 10 y continua en el **mismo** historial de GitHub. Tras cada avance verificado en la Actividad 1, realiza tambien `git add`, `git commit -m` y `git push origin main`.
 
@@ -51,7 +51,7 @@ Si es **otro ordenador** y todavía no tienes `parking-dam`, clónalo en `~/git/
 git clone https://github.com/TU_USUARIO/parking-dam.git
 ```
 
-Comprueba que conservas `README.md`, `diagramas/parking.drawio` y tus seis imágenes.
+Comprueba que conservas `README.md`, `diagramas` y tus seis imágenes.
 
 **Explicación para tu documentación:**
 
@@ -66,7 +66,7 @@ Comprueba que conservas `README.md`, `diagramas/parking.drawio` y tus seis imág
 3. Sitúa el proyecto **dentro de la carpeta que ya clonaste**: su ruta final debe ser `~/git/parking-dam/parking-java`.
 4. Si aparece **Create Git repository**, **desactívalo**.
 5. Conserva el `pom.xml` generado.
-6. En IntelliJ, crea la clase Java **`Main`** con **New → Java Class** (como paso inicial del IDE).
+6. En IntelliJ, crea la clase Java **`Parking`** con **New → Java Class** (como paso inicial del IDE).
 7. **Renómbrala desde el IDE**, usando **Refactor → Rename** (`Shift + F6`), a **`Parking`**. Comprueba que la clase se llama `Parking`, que el archivo se llama `Parking.java` y que el método de entrada sigue siendo `public static void main(String[] args)`. No cambies solo el nombre del archivo desde el explorador.
 8. Ejecuta `Parking.main()` y comprueba que la clase arranca antes de seguir.
 9. **No crees `parking-java/README.md`**: toda la documentación se añade al `README.md` de la raíz `parking-dam`.
@@ -119,7 +119,7 @@ git push origin main
 
 ## 4. Relación entre diagramas y código
 
-En el **único `README.md` de la raíz** documenta la relación entre diagramas y código. Las imágenes siguientes están integradas mediante rutas relativas a `diagramas/`. Explica debajo de cada una cómo se convierte en Java.
+En el **único `README.md` de la raíz** documenta la relación entre diagramas y código. Las imágenes siguientes están integradas mediante rutas relativas a `diagramas`. Explica debajo de cada una cómo se convierte en Java.
 
 ### 4.1. Diagrama 1 — Inicio e inicialización
 
@@ -349,7 +349,7 @@ public class Parking {
 
 ### Fase 0 — Crear y renombrar Main a Parking
 
-Crea `Main` desde IntelliJ, renombrala con **Refactor → Rename** a `Parking` y ejecuta la clase. Comprueba que el nombre del archivo, de la clase y la configuracion de ejecucion son correctos. Publica este primer avance:
+Crea `Parking` desde IntelliJ, renombrala con **Refactor → Rename** a `Parking` y ejecuta la clase. Comprueba que el nombre del archivo, de la clase y la configuracion de ejecucion son correctos. Publica este primer avance:
 
 ```bash
 git status
@@ -451,7 +451,7 @@ Este documento **es el unico `README.md`**, ubicado en la raiz de `parking-dam`.
 
 ### 9.2. Trabajo personal que debes anadir aqui
 
-**Desarrollo y explicaciones personales:** explica como has creado y renombrado la clase `Main` a `Parking`, como se relaciona cada una de las siete imagenes con tu programa y como intercambian datos tus metodos. Especifica la entrada, salida y finalidad de cada metodo. No basta con copiar la tabla orientativa: escribe las firmas **reales** que has implementado.
+**Desarrollo y explicaciones personales:** explica como has creado y renombrado la clase `Parking` a `Parking`, como se relaciona cada una de las siete imagenes con tu programa y como intercambian datos tus metodos. Especifica la entrada, salida y finalidad de cada metodo. No basta con copiar la tabla orientativa: escribe las firmas **reales** que has implementado.
 
 **Registro de comprobaciones:** por cada fase (0, A, B, C y D) documenta la fecha, lo que probaste, el resultado real y el mensaje/identificador de commit publicado en GitHub.
 
